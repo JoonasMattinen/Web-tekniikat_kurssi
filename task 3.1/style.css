@@ -8,9 +8,6 @@ body{
     width: 100%;
 }
 
-#carouselExampleControls{
-    display: inline-block;
-}
 a{
     text-decoration: none;
     color: #77CBB9;
