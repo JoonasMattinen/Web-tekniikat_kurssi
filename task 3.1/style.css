@@ -13,7 +13,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: aquamarine;
+    color: #77CBB9;
 }
 button{
     color: aquamarine;
@@ -21,3 +21,4 @@ button{
 footer, .navbar{
    background-color: #341216;
 }
+
