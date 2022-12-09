@@ -10,9 +10,8 @@ textarea{
 .mainContent{
     background-color: aliceblue;
     border: solid 1px black;
-    margin-top: 100px;
     padding:10px;
-
+    
 }
 #important{
     display: inline-block;
@@ -20,6 +19,7 @@ textarea{
 }
 button{
     display: block;
+    
 }
 .noteBox{
     border: solid 1px black;
@@ -27,5 +27,5 @@ button{
 .newElem{
     background-color: aliceblue;
     border: solid 1px black;
-    
+    margin-top: 5px;
 }
