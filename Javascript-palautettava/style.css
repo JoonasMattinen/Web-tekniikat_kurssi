@@ -11,7 +11,7 @@ textarea{
     background-color: aliceblue;
     border: solid 1px black;
     margin-top: 100px;
-    padding: 30px;
+    padding:10px;
 
 }
 #important{
@@ -27,5 +27,5 @@ button{
 .newElem{
     background-color: aliceblue;
     border: solid 1px black;
-    padding: 10px;
+    
 }

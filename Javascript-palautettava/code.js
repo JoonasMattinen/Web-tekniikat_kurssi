@@ -38,14 +38,18 @@ function printNote(){
         let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         let yyyy = today.getFullYear();
 
-        today = mm + '/' + dd + '/' + yyyy;
-     //luodaan form elementille uusi p elementti   
+        today = dd + '/' + mm + '/' + yyyy;
+     //luodaan form elementille uusi p elementti
+        let newDiv = document.createElement("div")   
+        let h2 = document.createElement("h2");
         let p = document.createElement("p");
-        p.className = "newElem";
-        form.appendChild(p)
+        newDiv.className = "newElem";
+        form.appendChild(newDiv)
+        newDiv.append(h2, p)
+        
         //käydään lista läpi
         for (newNote of notes) {
-            p.textContent = today + " " + (newNote.name);
-            
+            h2.textContent = today + " " + "(" + (newNote.name) + ")"
+            p.textContent = (newNote.message)
         }
 }
