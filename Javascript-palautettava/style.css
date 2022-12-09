@@ -1,6 +1,24 @@
-div{
-    border: solid 1px black;
+body{
+    background-color: black;
 }
-textarea + input{
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+textarea{
+    display: block;
+}
+.mainContent{
+    background-color: aliceblue;
+    border: solid 1px black;
+    margin-top: 100px;
+    padding: 30px;
+}
+p{
+    display: inline-block;
+}
+button{
     display: block;
 }
