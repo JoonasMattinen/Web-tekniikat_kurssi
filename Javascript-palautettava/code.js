@@ -54,14 +54,14 @@ function printNote(){
         //kutsutaan changeStyle funktiota
         changeStyle();  
 
-        // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan
+        // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan. tehdään funktio toisen sisään jotta muuttuja newDiv on voimassa
             checkbox.addEventListener('click', changeStyle)
             function changeStyle(){
             
                     if(checkbox.checked){
                         newDiv.classList.add('changedStyle');
                     }
-                    
+                        
                 };
 
         //käydään lista läpi
