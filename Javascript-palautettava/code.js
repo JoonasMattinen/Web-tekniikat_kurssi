@@ -4,7 +4,6 @@ let notes = [];
 
 
 let form = document.querySelector("form");
-let div = document.getElementById("newDiw");
 let checkbox = document.getElementById("checkbox");
 
 document.getElementById("addNote").addEventListener('click', addNotes);
@@ -44,29 +43,31 @@ function printNote(){
         let yyyy = today.getFullYear();
 
         today = dd + '/' + mm + '/' + yyyy;
+
      //luodaan form elementille uusi p elementti
         let newDiv = document.createElement("div")   
         let h2 = document.createElement("h2");
         let p = document.createElement("p");
-        form.appendChild(newDiv)
-        newDiv.append(h2, p)
+        form.appendChild(newDiv);
+        newDiv.append(h2, p);
         
-        changeSyle();  
-        
-            checkbox.addEventListener('click', changeSyle)
-            function changeSyle(){
+        //kutsutaan changeStyle funktiota
+        changeStyle();  
+
+        // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan
+            checkbox.addEventListener('click', changeStyle)
+            function changeStyle(){
             
                     if(checkbox.checked){
-                    newDiv.classList.add('changedStyle');
+                        newDiv.classList.add('changedStyle');
                     }
+                    
                 };
-
-        
 
         //käydään lista läpi
         for (newNote of notes) {
             h2.textContent = today + " " + "(" + (newNote.name) + ")"
-            p.textContent = (newNote.message)
+            p.textContent = (newNote.message);
         }
           
 }
