@@ -1,8 +1,6 @@
 .container{
     display: flex;
-    justify-content: left;
-    align-items: left;
-    width: 100%;
+    border: none;
 }
 textarea{
     display: block;
@@ -10,9 +8,9 @@ textarea{
 .mainContent{
     background-color: aliceblue;
     border: solid 1px black;
-    padding:10px;
-    
+    padding:10px;    
 }
+
 #checkboxText{
     display: inline-block;
     font-weight: bold;

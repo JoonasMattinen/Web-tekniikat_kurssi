@@ -65,9 +65,12 @@ function printNote(){
                 };
 
         //käydään lista läpi
-        for (newNote of notes) {
-            h2.textContent = today + " " + "(" + (newNote.name) + ")"
-            p.textContent = (newNote.message);
-        }
+        
+            for (newNote of notes) {
+                h2.textContent = today + " " + "(" + (newNote.name) + ")"
+                p.textContent = (newNote.message);
+                
+            }
+        
           
 }
