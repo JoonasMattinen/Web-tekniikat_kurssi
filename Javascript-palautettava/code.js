@@ -2,9 +2,12 @@
 let notes = [];
 
 
-document.getElementById("addNote").addEventListener('click', addNotes);
 
 let form = document.querySelector("form");
+
+document.getElementById("checkbox").addEventListener('click', changeStyle);
+document.getElementById("addNote").addEventListener('click', addNotes);
+
 
 /**
  * 
@@ -26,12 +29,13 @@ function addNotes(e){
     }
     
     notes.push(newNote)
-
-   
+    
     printNote();
+    changeStyle();
 }
 
 function printNote(){
+        
     // haetaan päivämäärä
         let today = new Date();
         let dd = String(today.getDate()).padStart(2, '0');
@@ -43,13 +47,23 @@ function printNote(){
         let newDiv = document.createElement("div")   
         let h2 = document.createElement("h2");
         let p = document.createElement("p");
-        newDiv.className = "newElem";
         form.appendChild(newDiv)
         newDiv.append(h2, p)
+
         
+
         //käydään lista läpi
         for (newNote of notes) {
             h2.textContent = today + " " + "(" + (newNote.name) + ")"
             p.textContent = (newNote.message)
         }
+          
 }
+function changeStyle(){
+        
+        document.getElementById("checkbox")[0];
+        if(this.checked){
+            addedDiv.classList.add("changedStyle")
+        }
+        
+}        

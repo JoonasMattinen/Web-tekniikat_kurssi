@@ -13,7 +13,7 @@ textarea{
     padding:10px;
     
 }
-#important{
+#checkboxText{
     display: inline-block;
     font-weight: bold;
 }
@@ -24,8 +24,11 @@ button{
 .noteBox{
     border: solid 1px black;
 }
-.newElem{
+div{
     background-color: aliceblue;
     border: solid 1px black;
-    margin-top: 5px;
+    margin-top: 5px; 
+}
+.changedStyle{
+    border: solid 1px red;
 }
