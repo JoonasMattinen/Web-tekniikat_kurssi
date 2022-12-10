@@ -51,11 +51,18 @@ function printNote(){
         form.appendChild(newDiv)
         newDiv.append(h2, p)
         
+        changeSyle();  
         
-            checkbox.addEventListener('click', () => {
+            checkbox.addEventListener('click', changeSyle)
+            function changeSyle(){
+            
+                    if(checkbox.checked){
                     newDiv.classList.add('changedStyle');
+                    }
+                };
 
-                });
+        
+
         //käydään lista läpi
         for (newNote of notes) {
             h2.textContent = today + " " + "(" + (newNote.name) + ")"
