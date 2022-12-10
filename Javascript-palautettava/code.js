@@ -54,21 +54,21 @@ function printNote(){
         //kutsutaan changeStyle() funktiota
         changeStyle();  
 
-        // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan. tehdään funktio toisen sisään jotta muuttuja newDiv on voimassa
-            checkbox.addEventListener('click', changeStyle)
-            function changeStyle(){
+    // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan. tehdään funktio toisen sisään jotta muuttuja newDiv on voimassa
+        checkbox.addEventListener('dblclick', changeStyle)
+        function changeStyle(){
             
-                    if(checkbox.checked){
-                        newDiv.classList.add('changedStyle');
-                    }
-                    for (newNote of notes) {
-                        h2.textContent = today + " " + "(" + (newNote.name) + ")"
-                        p.textContent = (newNote.message);
-                        
-                    }   
-                };
+            if(checkbox.checked){
+                newDiv.classList.add('changedStyle');
+                }
+                    
+            };
 
-        //käydään lista läpi
+    //käydään lista läpi
+        for (newNote of notes) {
+            h2.textContent = today + " " + "(" + (newNote.name) + ")"
+            p.textContent = (newNote.message);    
+        }   
         
             
         
