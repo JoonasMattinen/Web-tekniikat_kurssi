@@ -51,7 +51,7 @@ function printNote(){
         form.appendChild(newDiv);
         newDiv.append(h2, p);
         
-        //kutsutaan changeStyle funktiota
+        //kutsutaan changeStyle() funktiota
         changeStyle();  
 
         // Luodaan funktio joka muuttaa äsken luodun uuden divin tyyliä jos checkbox on tsekataan. tehdään funktio toisen sisään jotta muuttuja newDiv on voimassa
@@ -61,16 +61,16 @@ function printNote(){
                     if(checkbox.checked){
                         newDiv.classList.add('changedStyle');
                     }
+                    for (newNote of notes) {
+                        h2.textContent = today + " " + "(" + (newNote.name) + ")"
+                        p.textContent = (newNote.message);
                         
+                    }   
                 };
 
         //käydään lista läpi
         
-            for (newNote of notes) {
-                h2.textContent = today + " " + "(" + (newNote.name) + ")"
-                p.textContent = (newNote.message);
-                
-            }
+            
         
           
 }
