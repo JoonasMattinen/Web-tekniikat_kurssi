@@ -1,0 +1,25 @@
+$teemavari1: #341216;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #506C64;
+}
+.carousel-inner .item img {
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #77CBB9;
+}
+button{
+    color: $teemavari1;
+}
+footer, .navbar{
+   background-color: $teemavari1;
+}
+.bg-dark{
+    background-color :$teemavari1!important;
+}
