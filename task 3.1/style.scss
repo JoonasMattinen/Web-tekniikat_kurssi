@@ -1,9 +1,11 @@
 $teemavari1: #341216;
+$teemavari2: #CDD3D5;
+$teemavari3: #506C64;
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #506C64;
+    background-color: $teemavari3;
 }
 .carousel-inner .item img {
     height: 100%;
@@ -12,7 +14,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #77CBB9;
+    color: $teemavari2;
 }
 button{
     color: $teemavari1;
@@ -22,4 +24,13 @@ footer, .navbar{
 }
 .bg-dark{
     background-color :$teemavari1!important;
+}
+p{
+    color: $teemavari2;
+}
+.nav-link{
+    color: $teemavari2
+}
+.nav{
+    --bs-nav-link-hover-color: $teemavari3;
 }

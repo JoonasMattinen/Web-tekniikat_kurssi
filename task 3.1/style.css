@@ -11,7 +11,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #77CBB9;
+  color: #CDD3D5;
 }
 
 button {
@@ -24,6 +24,18 @@ footer, .navbar {
 
 .bg-dark {
   background-color: #341216 !important;
+}
+
+p {
+  color: #CDD3D5;
+}
+
+.nav-link {
+  color: #CDD3D5;
+}
+
+.nav {
+  --bs-nav-link-hover-color: $teemavari3;
 }
 
 /*# sourceMappingURL=style.css.map */
