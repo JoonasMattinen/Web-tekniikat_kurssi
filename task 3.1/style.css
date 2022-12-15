@@ -18,7 +18,6 @@ button{
 footer, .navbar{
    background-color: #341216;
 }
-
-.collapse{
-    background-color: #341216;
+.bg-dark{
+    background-color :#341216!important;
 }
