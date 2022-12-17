@@ -1,21 +1,13 @@
 $teemavari1: #341216;
 $teemavari2: #CDD3D5;
 $teemavari3: #506C64;
-
+$teemavari4: radial-gradient(circle, rgba(63,94,251,0.5835376386882878) 0%, rgba(52,18,22,1) 87%);
 body{
     margin: 0;
     padding: 0;
-    background-color: $teemavari3;
-}
-.carousel-inner .item img {
-    height: 100%;
-    width: 100%;
+    background: $teemavari4;
 }
 
-a{
-    text-decoration: none;
-    color: $teemavari2;
-}
 button{
     color: $teemavari1;
 }
@@ -33,4 +25,10 @@ p{
 }
 .nav{
     --bs-nav-link-hover-color: $teemavari3;
+}
+.navbar{
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+.card-body{
+    background: $teemavari1;
 }
