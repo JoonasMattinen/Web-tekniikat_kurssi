@@ -11,8 +11,11 @@ body{
 button{
     color: $teemavari1;
 }
-footer, .navbar{
-   background-color: $teemavari1;
+footer{
+   background-color: $teemavari4;
+}
+.navbar{
+    background-color: $teemavari1;
 }
 .bg-dark{
     background-color :$teemavari1!important;
@@ -20,15 +23,18 @@ footer, .navbar{
 p{
     color: $teemavari2;
 }
-.nav-link{
-    color: $teemavari2
-}
-.nav{
-    --bs-nav-link-hover-color: $teemavari3;
-}
-.navbar{
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
-}
 .card-body{
     background: $teemavari1;
+}
+h5{
+    color: $teemavari2;
+}
+.navbar{
+    background-color: $teemavari1;
+}
+.navbar-brand{
+    color: $teemavari2;
+}
+.nav-link{
+    color: $teemavari2;
 }
