@@ -38,3 +38,31 @@ h5{
 .nav-link{
     color: $teemavari2;
 }
+a{
+    text-decoration: none;
+}
+.card{
+    --bs-card-bg :$teemavari1;
+    
+}
+
+img[target= _hover]{
+    cursor:pointer;
+    transition: 1s ease;
+    }
+    
+img[target= _hover]:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+@media screen and (max-width: 600px) {
+    .fixed-bottom{
+        position: static;
+    }
+    .card{
+        --bs-card-group-margin:0rem;
+        --bs-card-border-width:0px;
+    }
+  }
