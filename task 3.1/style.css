@@ -8,7 +8,11 @@ button {
   color: #341216;
 }
 
-footer, .navbar {
+footer {
+  background-color: radial-gradient(circle, rgba(63, 94, 251, 0.5835376387) 0%, rgb(52, 18, 22) 87%);
+}
+
+.navbar {
   background-color: #341216;
 }
 
@@ -20,20 +24,24 @@ p {
   color: #CDD3D5;
 }
 
-.nav-link {
+.card-body {
+  background: #341216;
+}
+
+h5 {
   color: #CDD3D5;
 }
 
-.nav {
-  --bs-nav-link-hover-color: $teemavari3;
-}
-
 .navbar {
-  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  background-color: #341216;
 }
 
-.card-body {
-  background: #341216;
+.navbar-brand {
+  color: #CDD3D5;
+}
+
+.nav-link {
+  color: #CDD3D5;
 }
 
 /*# sourceMappingURL=style.css.map */
