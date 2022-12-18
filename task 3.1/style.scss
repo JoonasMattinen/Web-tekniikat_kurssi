@@ -66,4 +66,36 @@ img[target= _hover]:hover{
         --bs-card-group-margin:0rem;
         --bs-card-border-width:0px;
     }
-  }
+}
+//accordion css
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+.accordion{
+    --bs-accordion-active-color: $teemavari2;
+    --bs-accordion-btn-focus-box-shadow: $teemavari2;
+}
+
+.accordion-item, .accordion-header, .accordion-button, .accordion-button:not(.collapsed){
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.accordion-button, .accordion-button:not(.collapsed), .accordion-button:focus{
+    color: $teemavari2;
+}
+.accordion-button:focus{
+    border-color: $teemavari2;
+    box-shadow:$teemavari2
+}
+.accordion-body{
+    background: #341216;
+    border-radius: 5px;
+    color: #CDD3D5;
+}
+.accordionImg img{
+    width: 400px;
+    margin-top: 15px;
+}
