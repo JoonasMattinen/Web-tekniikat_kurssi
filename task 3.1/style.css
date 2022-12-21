@@ -11,12 +11,6 @@ button {
 
 footer {
   background-color: radial-gradient(circle, rgba(63, 94, 251, 0.5835376387) 0%, rgb(52, 18, 22) 87%);
-  background-image: url(./images/footertest.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  padding-top: 50px;
-  color: #fff;
 }
 
 .navbar {
