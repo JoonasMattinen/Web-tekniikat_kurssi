@@ -146,5 +146,8 @@ h1 {
     --bs-card-border-width:0px;
   }
 }
+h6 ~ p {
+  font-style: italic;
+}
 
 /*# sourceMappingURL=style.css.map */
