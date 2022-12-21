@@ -40,6 +40,9 @@ h5{
 .nav-link{
     color: $teemavari2;
 }
+.nav{
+--bs-nav-link-hover-color: black;
+}
 a{
     text-decoration: none;
 }
@@ -61,7 +64,7 @@ img[target= _hover]:hover{
 }
 @media screen and (max-width: 600px) {
     .fixed-bottom{
-        position: static;
+        position: sticky;
     }
     .card{
         --bs-card-group-margin:0rem;
