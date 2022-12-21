@@ -31,9 +31,6 @@ p{
 h5{
     color: $teemavari2;
 }
-.navbar{
-    background-color: $teemavari1;
-}
 .navbar-brand{
     color: $teemavari2;
 }
@@ -118,4 +115,16 @@ h1{
 }
 .svg-inline--fa{
     height: 2em;
+}
+.pagination{
+    --bs-pagination-hover-color: $teemavari2
+}
+.pagination li{
+    border: 4px solid $teemavari2;
+}
+.pagination li.selected, .pagination li:hover {
+    border-color: $teemavari1;
+}
+.page-link{
+    --bs-pagination-color: $teemavari2
 }
