@@ -110,10 +110,11 @@ h1{
     --bs-pagination-hover-color: $teemavari2
 }
 .pagination li{
-    border: 4px solid $teemavari2;
+    border: 4px solid $teemavari1;
 }
 .pagination li.selected, .pagination li:hover {
-    border-color: $teemavari1;
+    border-color: $teemavari2;
+    transition-duration: 500ms;
 }
 .page-link{
     --bs-pagination-color: $teemavari2

@@ -126,11 +126,12 @@ h1 {
 }
 
 .pagination li {
-  border: 4px solid #CDD3D5;
+  border: 4px solid #341216;
 }
 
 .pagination li.selected, .pagination li:hover {
-  border-color: #341216;
+  border-color: #CDD3D5;
+  transition-duration: 500ms;
 }
 
 .page-link {
