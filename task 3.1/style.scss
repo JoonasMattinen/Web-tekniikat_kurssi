@@ -2,6 +2,11 @@ $teemavari1: #341216;
 $teemavari2: #CDD3D5;
 $teemavari3: #506C64;
 $teemavari4: radial-gradient(circle, rgba(63,94,251,0.5835376386882878) 0%, rgba(52,18,22,1) 87%);
+@mixin accordionImages{
+    margin-top: 15px;
+    border: 5px solid $teemavari1;
+    border-radius: 5px;
+}
 body{
     margin: 0;
     padding: 0;
@@ -88,20 +93,14 @@ h1{
 }
 .accordionImg img{
     width: 400px;
-    margin-top: 15px;
-    border: 5px solid $teemavari1;
-    border-radius: 5px;
+    @include accordionImages;
 }
 .accordionImg2 img{
     width: 300px;
-    margin-top: 15px;
-    border: 5px solid $teemavari1;
-    border-radius: 5px;
+    @include accordionImages;
 }
 .carousel-item img{
-    margin-top: 15px;
-    border: 5px solid $teemavari1;
-    border-radius: 5px; 
+    @include accordionImages;
 }
 .svg-inline--fa{
     height: 2em;
@@ -130,4 +129,11 @@ h1{
 }
 h6 ~ p{
     font-style: italic;
+}
+li > a{
+    font-weight:bolder;
+}
+p + a:hover{
+    font-weight: bolder;
+    transition-duration: 500ms ;
 }
