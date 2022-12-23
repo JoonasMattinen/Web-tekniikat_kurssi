@@ -1,0 +1,139 @@
+$teemavari1: #341216;
+$teemavari2: #CDD3D5;
+$teemavari3: #506C64;
+$teemavari4: radial-gradient(circle, rgba(63,94,251,0.5835376386882878) 0%, rgba(52,18,22,1) 87%);
+@mixin accordionImages{
+    margin-top: 15px;
+    border: 5px solid $teemavari1;
+    border-radius: 5px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: $teemavari4;
+    height: 100vh;
+}
+
+button{
+    color: $teemavari1;
+}
+footer{
+   background-color: $teemavari4;
+}
+.navbar{
+    background-color: $teemavari1;
+}
+.bg-dark{
+    background-color :$teemavari1!important;
+}
+p{
+    color: $teemavari2;
+}
+.card-body{
+    background: $teemavari1;
+    
+}
+h5{
+    color: $teemavari2;
+}
+.navbar-brand{
+    color: $teemavari2;
+}
+.nav-link{
+    color: $teemavari2;
+}
+.nav{
+--bs-nav-link-hover-color: black;
+}
+a{
+    text-decoration: none;
+}
+.card{
+    --bs-card-bg :$teemavari1;
+    
+}
+
+img[target= _hover]{
+    cursor:pointer;
+    transition: 1s ease;
+    }
+    
+img[target= _hover]:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+.accordion{
+    --bs-accordion-active-color: $teemavari2;
+    --bs-accordion-btn-focus-box-shadow: $teemavari2;
+}
+
+.accordion-item, .accordion-header, .accordion-button, .accordion-button:not(.collapsed){
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.accordion-button, .accordion-button:not(.collapsed), .accordion-button:focus{
+    color: $teemavari2;
+}
+.accordion-button:focus{
+    border-color: $teemavari2;
+    box-shadow:$teemavari2
+}
+.accordion-body{
+    background: $teemavari1;
+    border-radius: 5px;
+    color: #CDD3D5;
+}
+.accordionImg img{
+    width: 400px;
+    @include accordionImages;
+}
+.accordionImg2 img{
+    width: 300px;
+    @include accordionImages;
+}
+.carousel-item img{
+    @include accordionImages;
+}
+.svg-inline--fa{
+    height: 2em;
+}
+.pagination{
+    --bs-pagination-hover-color: $teemavari2
+}
+.pagination li{
+    border: 4px solid $teemavari1;
+}
+.pagination li.selected, .pagination li:hover {
+    border-color: $teemavari2;
+    transition-duration: 500ms;
+}
+.page-link{
+    --bs-pagination-color: $teemavari2
+}
+@media screen and (max-width: 600px) {
+    .fixed-bottom{
+        position: sticky;
+    }
+    .card{
+        --bs-card-group-margin:0rem;
+        --bs-card-border-width:0px;
+    }
+}
+h6 ~ p{
+    font-style: italic;
+}
+li > a{
+    font-weight:bolder;
+}
+p + a:hover{
+    font-weight: bolder;
+    transition-duration: 500ms ;
+}

@@ -1,0 +1,7 @@
+// what colors to use
+
+dark sienna #341216
+Feldgrau #506C64
+Middle blue green #77CBB9
+dark sky blue #75B8C8
+Light gray #CDD3D5

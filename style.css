@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(63, 94, 251, 0.5835376387) 0%, rgb(52, 18, 22) 87%);
+  height: 100vh;
+}
+
+button {
+  color: #341216;
+}
+
+footer {
+  background-color: radial-gradient(circle, rgba(63, 94, 251, 0.5835376387) 0%, rgb(52, 18, 22) 87%);
+}
+
+.navbar {
+  background-color: #341216;
+}
+
+.bg-dark {
+  background-color: #341216 !important;
+}
+
+p {
+  color: #CDD3D5;
+}
+
+.card-body {
+  background: #341216;
+}
+
+h5 {
+  color: #CDD3D5;
+}
+
+.navbar-brand {
+  color: #CDD3D5;
+}
+
+.nav-link {
+  color: #CDD3D5;
+}
+
+.nav {
+  --bs-nav-link-hover-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  --bs-card-bg:$teemavari1;
+}
+
+img[target=_hover] {
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+img[target=_hover]:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.accordion {
+  --bs-accordion-active-color: $teemavari2;
+  --bs-accordion-btn-focus-box-shadow: $teemavari2;
+}
+
+.accordion-item, .accordion-header, .accordion-button, .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.accordion-button, .accordion-button:not(.collapsed), .accordion-button:focus {
+  color: #CDD3D5;
+}
+
+.accordion-button:focus {
+  border-color: #CDD3D5;
+  box-shadow: #CDD3D5;
+}
+
+.accordion-body {
+  background: #341216;
+  border-radius: 5px;
+  color: #CDD3D5;
+}
+
+.accordionImg img {
+  width: 400px;
+  margin-top: 15px;
+  border: 5px solid #341216;
+  border-radius: 5px;
+}
+
+.accordionImg2 img {
+  width: 300px;
+  margin-top: 15px;
+  border: 5px solid #341216;
+  border-radius: 5px;
+}
+
+.carousel-item img {
+  margin-top: 15px;
+  border: 5px solid #341216;
+  border-radius: 5px;
+}
+
+.svg-inline--fa {
+  height: 2em;
+}
+
+.pagination {
+  --bs-pagination-hover-color: $teemavari2 ;
+}
+
+.pagination li {
+  border: 4px solid #341216;
+}
+
+.pagination li.selected, .pagination li:hover {
+  border-color: #CDD3D5;
+  transition-duration: 500ms;
+}
+
+.page-link {
+  --bs-pagination-color: $teemavari2 ;
+}
+
+@media screen and (max-width: 600px) {
+  .fixed-bottom {
+    position: sticky;
+  }
+  .card {
+    --bs-card-group-margin:0rem;
+    --bs-card-border-width:0px;
+  }
+}
+h6 ~ p {
+  font-style: italic;
+}
+
+li > a {
+  font-weight: bolder;
+}
+
+p + a:hover {
+  font-weight: bolder;
+  transition-duration: 500ms;
+}
+
+/*# sourceMappingURL=style.css.map */

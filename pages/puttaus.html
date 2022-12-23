@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3.1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- Navbar alkaa-->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-house"></i></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar loppu-->
+  <div class="container text-center">
+    <h1>Puttaaminen</h1>
+    <div class="row">
+      <div class="accordionImg2 col-lg-4">
+        <img src="../images/putting.jpg" alt="" srcset="">
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Puttausrinki
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Puttausrinki on jaettu kahteen alueeseen. "Circle 1" on 10m säteellä korista ja "circle 2" on 10
+                  metrin ja 20 metrin välissä. Tämä on alue josta suurin osa puteista pitäisi saada sisään.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Spinputti
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Spinputissa jalat ovat peräkkäin. rannetta pyöräytetään 90 astetta, jolla saa aikaan hyvä kierteen
+                  kiekkoon. Tämä tyyli on hyvä tuulisessa ilmassa, mutta on alttiimpi puttausvirheelle koska rannetta
+                  täytyy pyöräyttää nopeasti.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Pushputti
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Pushputissa jalat ovat haarallaan. Tässä tyylissä ei juuri pyöräytetä vaan pyritään pitäämään kiekko
+                  koko liikkeen ajan suoraan kohti koria. Tämä tyyli vie kiekon varmemmin kohti koria, mutta tuulisella
+                  säällä tässä tyylissä voi loppua vauhti kesken jolloin kiekko lähtee kaartumaan ennen koria.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!--containerin loppu-->
+  <!-- tästä alkaa footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom">
+      <p class="col-md-4 mb-0">&copy; Joonas Mattinen / TIK22SP</p>
+
+      <!--pagination alku-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination col-md-4">
+          <li class="page-item"><a class="page-link" href="./draivi.html">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="./tietoa.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="./draivi.html">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="">3</a></li>
+          <li class="page-item disabled"><a class="page-link" href="">Next</a></li>
+        </ul>
+      </nav>
+      <!--pagination loppu-->
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://github.com/JoonasMattinen/Web-tekniikat_kurssi" class="nav-link px-2"><i
+              class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- tähän loppuu footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
